@@ -1,6 +1,6 @@
 import { Component, input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CommonModel } from '../../../../first-lib-api/src';
+import { CommonModel } from '@myorg/first-lib-api';
 
 @Component({
   selector: 'lib-first-lib',
@@ -10,5 +10,5 @@ import { CommonModel } from '../../../../first-lib-api/src';
   styleUrl: './first-lib.component.css',
 })
 export class FirstLibComponent {
-  common = input<CommonModel>()
+  common = input<CommonModel>();
 }
